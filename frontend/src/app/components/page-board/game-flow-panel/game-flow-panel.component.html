@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="game-log">
+        <div class="mat-h3">Noticias del Centro</div>
+
+        <div class="messages-area">
+            <div class="muted" *ngIf="log.length == 0">
+                El Centro guarda silencio..<br>
+                <small>Para empezar a desenmascarar agentes, se necesita el cifrado del Centro.</small>
+            </div>
+
+            <div *ngFor="let turn of log" class="turn">
+                <app-log-item *ngFor="let item of turn, let i=index, trackBy: logItemText" [logItem]="item" [isHint]="i==0"></app-log-item>
+            </div>
+        </div>
+    </div>
+
+    <div class="spymaster-controls" *ngIf="playerType == SPYMASTER">
+        <div class="mat-h3">Enviar el cifrado</div>
+
+        <app-spymaster-hint-input class="hint-input"
+            [side]="nextHintSide"
+            [messageControl]="messageControl"
+            (enter)="onSendClick()">
+        </app-spymaster-hint-input>
+
+        <button mat-raised-button type="submit"
+            (click)="onSendClick()"
+            [class.send-button-blue]="nextHintSide == BLUE"
+            [class.send-button-red]="nextHintSide == RED">
+            Enviar
+        </button>
+    </div>
+</div>

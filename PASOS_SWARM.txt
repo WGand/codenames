@@ -1,0 +1,6 @@
+PARA DESPLEGAR EL STACK
+docker build -t codenames -f Dockerfile .
+docker stack deploy -c compose.yaml codenames
+
+PARA BORRAR EL STACK
+docker stack rm codenames

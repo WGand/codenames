@@ -1,0 +1,22 @@
+<div class="credentials">Creado por <a href="https://vk.com/koldoon">koldoon</a>, 2020. Potenciado por Nginx, Node.js, Angular y Material Design.</div>
+<mat-card class="mat-elevation-z4">
+    <mat-card-title>Codenames</mat-card-title>
+
+    <mat-card-subtitle>
+        Codenames - un juego de mesa creado por Vlaada Chvátil y publicado en 2015 por Czech Games Edition.
+    </mat-card-subtitle>
+    
+    <p>
+        Para comenzar a jugar, haz clic en <span class="b">Crear nueva partida</span>.
+        Otros participantes pueden unirse al juego después de su creación en cualquier momento.
+    </p>
+    
+    <mat-card-actions align="end">
+        <button mat-button color="warn" (click)="onRulesClick()">
+            ¿Cómo jugar?
+        </button>
+        <button mat-raised-button color="primary" (click)="onCreateGameClick()">
+            Crear nueva partida
+        </button>
+    </mat-card-actions>    
+</mat-card>

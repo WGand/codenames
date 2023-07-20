@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Nuevo juego</h2>
+
+<div mat-dialog-content>
+    <p>
+        El juego actual aún no ha terminado.<br/>
+        No se podrá deshacer la operación.<br/>
+    </p>
+    <p>
+        ¿Estás seguro/a?
+    </p>
+</div>
+
+<mat-dialog-actions align="end" class="action-buttons">
+    <button mat-button mat-dialog-close>Oh, no</button>
+    <button mat-button color="primary" [mat-dialog-close]="1">Absolutamente</button>
+</mat-dialog-actions>

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "../dist/server",
+    "module": "commonjs",
+    "strict": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "incremental": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es2017"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
+}

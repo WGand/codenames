@@ -1,0 +1,7 @@
+<mat-form-field class="hint-input" appearance="legacy" floatLabel="always"
+    [class.form-field-blue]="side == BLUE"
+    [class.form-field-red]="side == RED">
+
+    <mat-label>Cifrado del Centro (palabra y número)</mat-label>
+    <input matInput [formControl]="messageControl" autocomplete="off" (keydown.enter)="enter.emit($event)">
+</mat-form-field>

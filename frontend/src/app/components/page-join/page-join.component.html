@@ -1,0 +1,45 @@
+<mat-card class="mat-elevation-z4">
+    <mat-card-title class="title">Codenames</mat-card-title>
+    <mat-card-subtitle>El juego ha sido creado.</mat-card-subtitle>
+
+    <mat-card-content>
+        <p>
+            Unirse como:
+        </p>
+
+        <div class="team-role">
+            <button mat-raised-button
+                color="warn"
+                (click)="onJoinAsCaptainClick()">
+
+                Capitán
+            </button>
+
+            <p>
+                Los capitanes pueden ver la afiliación de todos los <span class="b">agentes</span> en el tablero.
+                Transmiten códigos cortos <span class="b">cifrado</span> a los equipos, para que
+                puedan encontrar a sus <span class="b">propios</span>.
+            </p>
+        </div>
+
+        <div class="team-role">
+            <button mat-raised-button
+                color="primary"
+                (click)="onJoinAsTeammateClick()">
+
+                Jugador
+            </button>
+
+            <p>
+                Los jugadores pueden ver la afiliación solo de los agentes descubiertos. Trabajan juntos
+                para resolver las <span class="b">pistas</span> y determinar
+                a sus <span class="b">propios agentes</span>.
+            </p>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+        <button mat-button (click)="onBackClick()">Atrás</button>
+        <button mat-button (click)="onCopyLinkClick($event)">Enlace del juego</button>
+    </mat-card-actions>
+</mat-card>
