@@ -4,8 +4,8 @@ Esta es una implementación simple del famoso juego de mesa - Codenames (de Vlaa
 
 ## Steps to run
  - Instalar [Node.js](https://nodejs.org/en/)
- - `$ git clone git@gitlab.com:ucab-202325-26827/g1_codenames/codenames-server.git` - clonar este repositorio
- - `$ cd codenames-server-main`
+ - `$ git clone https://github.com/WGand/codenames.git` - clonar este repositorio
+ - `$ cd codenames`
  - `$ npm i` - instalar dependencias
  - `$ npm run build` - compilar el código fuente en `./dist`
  - `$ npm run start` - iniciar el servidor del juego y el frontend
@@ -14,8 +14,8 @@ Esta es una implementación simple del famoso juego de mesa - Codenames (de Vlaa
 ## Crear una imagen de Docker a partir del código fuente local
  - Instalar [Node.js](https://nodejs.org/en/)
  - Instalar [Docker](https://www.docker.com/)
- - `$ git clone git@gitlab.com:ucab-202325-26827/g1_codenames/codenames-server.git` - clonar este repositorio
- - `$ cd codenames-server-main`
+ - `$ git clone https://github.com/WGand/codenames.git` - clonar este repositorio
+ - `$ cd codenames`
  - `$ npm i` - instalar dependencias
  - `$ npm run build-docker`
  
@@ -23,14 +23,14 @@ La imagen resultante se etiquetará como `codenames-game-server:latest`.
 
 ## Crear solo una imagen de Docker (utilizando una construcción por etapas)
  - Instalar [Docker](https://www.docker.com/)
- - `$ git clone git@gitlab.com:ucab-202325-26827/g1_codenames/codenames-server.git` - clone this repo
- - `$ cd codenames-server-main`
+ - `$ git clone https://github.com/WGand/codenames.git` - clone this repo
+ - `$ cd codenames`
  - `$ docker build . -f dockerfile.staged -t codenames-game`
 
  ## Opciones para usar con Docker Swarm
  - Instalar [Docker](https://www.docker.com/)
- - `$ git clone git@gitlab.com:ucab-202325-26827/g1_codenames/codenames-server.git` - clone this repo
- - `$ cd codenames-server-main`
+ - `$ git clone https://github.com/WGand/codenames.git` - clone this repo
+ - `$ cd codenames`
  - `$ docker swarm init`
  - `$ docker stack deploy -c compose.yaml codenames`
  
