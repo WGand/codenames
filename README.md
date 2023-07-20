@@ -9,7 +9,7 @@ Esta es una implementación simple del famoso juego de mesa - Codenames (de Vlaa
  - `$ npm i` - instalar dependencias
  - `$ npm run build` - compilar el código fuente en `./dist`
  - `$ npm run start` - iniciar el servidor del juego y el frontend
- - Abrir `http://localhost:8095/` y disfrutar
+ - Abrir `http://localhost:8810/` y disfrutar
 
 ## Crear una imagen de Docker a partir del código fuente local
  - Instalar [Node.js](https://nodejs.org/en/)
